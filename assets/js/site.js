@@ -54,7 +54,7 @@
   // Android: the APK lives outside this site (its distribution is decided separately).
   var apk = httpsUrl(android.downloadUrl);
   if (apk) {
-    enable('[data-download="android"]', apk, 'APK をダウンロード');
+    enable('[data-download="android"]', apk, 'ダウンロード');
     each('[data-state="android-pending"]', function (el) { el.hidden = true; });
     each('[data-state="android-ready"]', function (el) { el.hidden = false; });
   }
