@@ -14,11 +14,11 @@ window.FAIRY_RELEASE = {
     versionName: '1.0.0',
     versionCode: 1,
     minAndroid: '7.0',
-    fileName: 'Fairy-1.0.0-1.apk',
+    fileName: 'fairy-performer-android-1.0.0-1-prod.apk',
     fileSize: '約 56 MB',
     apkSha256: '295cd1115b033e2d840cb688d4db354c96c5350be0c5a7acd4d4472c622e14eb',
     certSha256: '17:1E:C9:1F:F8:28:D6:62:4A:D5:1F:E7:11:FB:3B:37:4F:4A:D3:32:33:D5:F5:8A:E5:53:73:48:0D:A0:DB:36',
-    downloadUrl: null,
+    downloadUrl: 'https://pub-53153ea32fca4383811f43275f914355.r2.dev/fairy-performer-android-1.0.0-1-prod.apk',
   },
   ios: {
     minIOS: '15.0',
