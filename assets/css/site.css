@@ -189,8 +189,14 @@ a:hover { color: var(--pink); }
 .sub-title { margin: 36px 0 12px; font-size: 1.2rem; }
 
 .features { background: var(--canvas); }
-.feature-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; }
-@media (min-width: 760px) { .feature-grid { grid-template-columns: repeat(3, 1fr); } }
+/* Phones: each card is followed by its screenshot. From 760px: cards on one row,
+   screenshots on the next (each item spans both rows through a subgrid). */
+.feature-grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 40px; }
+.feature-item { display: grid; gap: 16px; }
+@media (min-width: 760px) {
+  .feature-grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto auto; column-gap: 16px; row-gap: 36px; }
+  .feature-item { grid-row: span 2; grid-template-rows: subgrid; row-gap: 36px; }
+}
 .feature-card { background: var(--surface); border-radius: var(--radius-card); padding: 24px; box-shadow: var(--shadow); }
 .feature-card h3 { margin: 12px 0 6px; font-size: 1.1rem; }
 .feature-card p { margin: 0; color: var(--text-muted); font-size: 0.95rem; }
@@ -200,17 +206,12 @@ a:hover { color: var(--pink); }
 .tone-blue { background: var(--blue-soft); fill: var(--blue); }
 .tone-lavender { background: var(--lavender-soft); fill: var(--lavender); }
 
-.screens {
-  margin: 32px 0 0; display: grid; gap: 16px; grid-auto-flow: column;
-  grid-auto-columns: minmax(200px, 62%); overflow-x: auto; padding: 4px 4px 12px;
-  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+.feature-shot {
+  display: block; width: 100%; max-width: 320px; height: auto; margin: 0 auto; align-self: start;
+  border-radius: 22px; box-shadow: var(--shadow); background: var(--surface);
 }
-.screens img { border-radius: 22px; box-shadow: var(--shadow); scroll-snap-align: center; background: var(--surface); }
-.screens figcaption { grid-column: 1 / -1; grid-row: 2; color: var(--text-faint); font-size: 0.85rem; text-align: center; }
-@media (min-width: 760px) {
-  .screens { grid-auto-flow: row; grid-template-columns: repeat(3, 1fr); overflow: visible; }
-  .screens figcaption { grid-row: auto; }
-}
+@media (min-width: 760px) { .feature-shot { max-width: none; } }
+.screens-note { margin: 16px 0 12px; color: var(--text-faint); font-size: 0.85rem; text-align: center; }
 
 .card { background: var(--surface); border: 1px solid var(--divider); border-radius: var(--radius-card); padding: 20px; }
 .card + .card, .card + .sub-title { margin-top: 24px; }
