@@ -25,7 +25,7 @@ window.FAIRY_RELEASE = {
     appStoreUrl: null,
   },
   pages: {
-    guide: false,
+    guide: true,
     faq: false,
     updates: false,
   },

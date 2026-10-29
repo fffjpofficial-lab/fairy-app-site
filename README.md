@@ -55,11 +55,12 @@
 - 拡大表示: 画像は `<button class="zoom">` の中にあり、`assets/js/guide.js` が押されたときに `<dialog class="lightbox">` で大きく表示する
   （閉じるボタン・背景のクリック・Esc で閉じる）。JavaScript が無くても画像はそのまま見える
 - 「よくある質問」は `/guide/faq/`（`<details>`、`#q-…` のリンクでその質問が開く）。トップの `pages.faq` が指す `faq/` とは別
-- 公開まで `release.js` の `pages.guide` は `false` のまま（トップのメニューにガイドへのリンクは出ない。`/guide/` に直接アクセスすれば見える）
+- `release.js` の `pages.guide` は `true`（2026-10-30。トップのヘッダーのメニューとサポートの欄に「操作ガイド」が出る）。
+  `pages.faq` は `false` のまま（ガイドのよくある質問は `/guide/faq/` にあり、トップの `faq/` のページは無い）
 
-## 将来のページ（操作ガイド・よくある質問・更新情報）
+## 将来のページ（よくある質問・更新情報）
 
-1. フォルダーを作る: `guide/index.html`・`faq/index.html`・`updates/index.html`（`404.html` の形を写し、`.page` の中に本文を書く。
+1. フォルダーを作る: `faq/index.html`・`updates/index.html`（`404.html` の形を写し、`.page` の中に本文を書く。
    アセットは `/assets/...` の絶対パスで参照する）
 2. `assets/js/release.js` の `pages` の該当する項目を `true` にする → ヘッダーのメニューとサポートの欄にリンクが出る
 3. まだ無いページへのリンクは出さない（`pages` が `false` の間は隠れている）
