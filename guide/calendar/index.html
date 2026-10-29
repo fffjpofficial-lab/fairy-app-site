@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カレンダー・予定の変更と取り消し | Fairy 操作ガイド</title>
+  <meta name="description" content="Fairy 出演者アプリのカレンダーの使い方。出勤予定の確認、変更、取り消しと期限。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body class="guide">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Fairy 出演者アプリ トップ">
+        <img src="/assets/img/app-icon-512.png" alt="" width="36" height="36">
+        <span class="brand-word">Fairy</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span><span class="visually-hidden">メニュー</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="サイト内">
+        <a href="/guide/">操作ガイド</a>
+        <a href="/guide/faq/">よくある質問</a>
+        <a href="/#download">ダウンロード</a>
+        <a href="/#support">サポート</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero" aria-labelledby="page-title">
+      <div class="container narrow">
+        <nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">公式サイト</a></li><li><a href="/guide/">操作ガイド</a></li><li aria-current="page">カレンダー・予定の変更と取り消し</li></ol></nav>
+        <p class="eyebrow">操作ガイド</p>
+        <h1 id="page-title">カレンダー・予定の変更と取り消し</h1>
+        <p class="lead">登録した出勤予定を月ごとに確認できます。出勤する日の前日 23:59 までは、予定の変更・取り消しもできます。</p>
+        <nav class="guide-toc" aria-label="このページの内容">
+          <p class="guide-toc-title">このページの内容</p>
+          <ul>
+            <li><a href="#view">カレンダーの見方</a></li>
+            <li><a href="#detail">出勤予定の詳細</a></li>
+            <li><a href="#change">予定を変更する</a></li>
+            <li><a href="#room-release">Room の割り当てが解除される場合</a></li>
+            <li><a href="#cancel">予定を取り消す</a></li>
+            <li><a href="#limit">変更・取り消しの期限</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="section guide-section" id="view" aria-labelledby="view-title">
+      <div class="container guide-wide">
+        <h2 id="view-title" class="section-title">カレンダーの見方</h2>
+        <div class="guide-split">
+          <div>
+            <p>「カレンダー」では、登録済みの出勤予定を月ごとに確認できます。</p>
+            <ul class="plain-list">
+              <li>上の矢印（前の月・次の月）で月を切り替えます。</li>
+              <li><strong>青い点</strong>は登録済みの出勤がある日、<strong>オレンジの点</strong>は補填予定がある日です。</li>
+              <li>今日の日付は輪で囲まれます。日付をタップすると、その日の出勤予定が表示されます。</li>
+              <li>カレンダーの下には、その月の出勤予定が日ごとに並びます。</li>
+            </ul>
+            <p class="small-note">今月を表示しているときは、月が替わると自動で新しい月に切り替わります。画面を下に引っ張ると、最新の内容を読み込みます。</p>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: カレンダーの画面: 月のカレンダーと、日ごとの出勤予定"><span class="shot-frame"><img src="/assets/img/guide/s-cal-top.jpg" alt="カレンダーの画面: 月のカレンダーと、日ごとの出勤予定" width="600" height="1304" loading="lazy"><span class="mark" style="left:5.2%;top:25.3%;width:89.7%;height:42.5%" aria-hidden="true"></span></span></button><figcaption>カレンダー（表示は架空のデータです）</figcaption></figure>
+        </div>
+        <h3 class="sub-title">予定の表示と Room</h3>
+        <p>予定のカードには、時間（日をまたぐ出勤には「翌」）、<span class="ui">通勤</span> または <span class="ui">在宅</span> の印、補填予定にはオレンジの「補填」の印が付きます。通勤の予定には Room が表示されます。</p>
+        <div class="screen-row">
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 予定のカード: Room 2、在宅、Room 未割当"><span class="shot-frame"><img src="/assets/img/guide/s-cal-cards.jpg" alt="予定のカード: Room 2、在宅、Room 未割当" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:37.1%;width:90%;height:13.2%" aria-hidden="true"></span><span class="mark" style="left:5%;top:56.1%;width:90%;height:9.9%" aria-hidden="true"></span><span class="mark" style="left:5%;top:71.9%;width:90%;height:13.1%" aria-hidden="true"></span></span></button><figcaption>Room 2・在宅・Room 未割当</figcaption></figure>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 予定のカード: 出勤中と、補填の印"><span class="shot-frame"><img src="/assets/img/guide/s-cal-list.jpg" alt="予定のカード: 出勤中と、補填の印" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:52.9%;width:90%;height:13.1%" aria-hidden="true"></span><span class="mark" style="left:5%;top:71.9%;width:90%;height:13.1%" aria-hidden="true"></span></span></button><figcaption>出勤中・補填予定</figcaption></figure>
+        </div>
+        <ul class="plain-list">
+          <li><strong>Room ○○</strong>: 店舗が割り当てた Room です。</li>
+          <li><strong>Room 未割当</strong>: Room は店舗が割り当てます。未割当でも出勤予定は有効です。</li>
+          <li><strong>在宅</strong>: 在宅の出勤には Room はありません。</li>
+        </ul>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="detail" aria-labelledby="detail-title">
+      <div class="container guide-wide">
+        <h2 id="detail-title" class="section-title">出勤予定の詳細</h2>
+        <div class="guide-split">
+          <div>
+            <p>カレンダーの予定のカード、またはホームの出勤の Room の行をタップすると「出勤予定の詳細」が開きます。日付・時間・勤務方法・Room と、状態（「登録済み」など）が表示されます。</p>
+            <p>出勤する日の前日 23:59 までは、<span class="ui">変更する</span> と <span class="ui">取り消す</span> が表示されます。</p>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 出勤予定の詳細: 変更すると取り消すのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-cal-detail.jpg" alt="出勤予定の詳細: 変更すると取り消すのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:82.4%;width:90%;height:5.6%" aria-hidden="true"></span><span class="mark" style="left:5%;top:89.3%;width:90%;height:5.4%" aria-hidden="true"></span></span></button><figcaption>出勤予定の詳細</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section" id="change" aria-labelledby="change-title">
+      <div class="container narrow">
+        <h2 id="change-title" class="section-title">予定を変更する</h2>
+        <ol class="steps shot-steps">
+          <li class="has-shot"><div class="step-text"><strong>カレンダーで、変更する予定のカードをタップします。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 予定のカードをタップ"><span class="shot-frame"><img src="/assets/img/guide/s-cal-cards.jpg" alt="予定のカードをタップ" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:37.1%;width:90%;height:13.2%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>「出勤予定の詳細」で <span class="ui">変更する</span> を押します。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 変更するのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-cal-detail.jpg" alt="変更するのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:82.4%;width:90%;height:5.6%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>「出勤内容を変更」で、勤務方法や時間を変えます。</strong><span>時間のルールは登録と同じです（<a href="/guide/rooms/#rules">勤務時間のルール</a>）。日付を変えるときは <span class="ui">日付を変更</span> を押します。補填予定は通勤のまま変更します。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 出勤内容を変更の画面: 日付を変更"><span class="shot-frame"><img src="/assets/img/guide/s-cal-change-form.jpg" alt="出勤内容を変更の画面: 日付を変更" width="600" height="1304" loading="lazy"><span class="mark" style="left:73.5%;top:19.2%;width:20%;height:3.2%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>日付を変えるときは、新しい日をタップします。</strong><span>選べるのは明日から来月末までの日です（前日23:59まで）。休止の月の日に移すことはできません（「休止中の月には出勤予定を登録・移動できません。」と表示されます）。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 日付を選ぶ画面"><span class="shot-frame"><img src="/assets/img/guide/s-cal-change-date.jpg" alt="日付を選ぶ画面" width="600" height="1304" loading="lazy"><span class="mark" style="left:69%;top:40.3%;width:8.6%;height:4.2%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong><span class="ui">変更内容を確認する</span> を押します。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 変更内容を確認するのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-cal-change-form.jpg" alt="変更内容を確認するのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:89%;width:90%;height:5.7%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>「変更内容の確認」で内容を確かめ、<span class="ui">この内容で変更する</span> を押します。</strong><span>日付を変えたときは、元の日と新しい日が表示されます。Room が割り当てられている通勤の予定では、Room の割り当てが解除されることも表示されます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 変更内容の確認の画面: 日付を変更します、この内容で変更する"><span class="shot-frame"><img src="/assets/img/guide/s-cal-change-confirm.jpg" alt="変更内容の確認の画面: 日付を変更します、この内容で変更する" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:33.4%;width:90%;height:20%" aria-hidden="true"></span><span class="mark" style="left:5%;top:89%;width:90%;height:5.7%" aria-hidden="true"></span></span></button></figure></li>
+        </ol>
+        <p>「出勤予定を変更しました。」と表示され、元の画面に戻ります。変更はすぐにカレンダーに反映されます。</p>
+        <p class="shot-hint">画像をタップすると大きく表示されます。ピンクの枠は操作する場所です。</p>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="room-release" aria-labelledby="room-release-title">
+      <div class="container narrow">
+        <h2 id="room-release-title" class="section-title">Room の割り当てが解除される場合</h2>
+        <p>変更の内容によっては、割り当てられていた Room が解除されます。解除されても出勤予定はそのまま残り、Room は店舗が割り当て直します。</p>
+        <dl class="guide-facts">
+          <div><dt>日付を変更したとき</dt><dd>Room は必ず解除されます。確認の画面に「日付を変更すると、Roomの割り当ては解除されます。変更後の日のRoomは店舗が割り当てます。」と表示されます。</dd></div>
+          <div><dt>時間を変更したとき</dt><dd>変更後の時間が、同じ Room のほかの人の予定などと重なる場合だけ解除されます。重ならなければ Room はそのままです。</dd></div>
+          <div><dt>在宅に変更したとき</dt><dd>在宅の出勤には Room がないため、Room はなくなります。</dd></div>
+        </dl>
+        <p class="small-note">解除されたときは、変更の後に「時間の変更により、Roomの割り当てが解除されました。」または「日付の変更により、Roomの割り当てが解除されました。」と表示されます。</p>
+      </div>
+    </section>
+    <section class="section guide-section" id="cancel" aria-labelledby="cancel-title">
+      <div class="container narrow">
+        <h2 id="cancel-title" class="section-title">予定を取り消す</h2>
+        <ol class="steps shot-steps">
+          <li class="has-shot"><div class="step-text"><strong>「出勤予定の詳細」で <span class="ui">取り消す</span> を押します。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 取り消すのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-cal-detail.jpg" alt="取り消すのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:89.3%;width:90%;height:5.4%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>内容を確かめ、<span class="ui">この予定を取り消す</span> を押します。</strong><span>「この出勤予定を取り消しますか？取り消した出勤予定は元に戻せません。」と表示されます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 出勤予定の取り消しの画面: この予定を取り消すのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-cal-cancel-confirm.jpg" alt="出勤予定の取り消しの画面: この予定を取り消すのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:89.3%;width:90%;height:5.4%" aria-hidden="true"></span></span></button></figure></li>
+        </ol>
+        <p>「出勤予定を取り消しました。」と表示され、予定はカレンダーから消えます。</p>
+        <div class="notice notice-info">
+          <p class="notice-title">取り消した予定は元に戻せません</p>
+          <p>もう一度出勤するときは、<a href="/guide/rooms/">ルーム予約</a> から新しく登録してください。補填予定は、補填日の当日には取り消せません。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="limit" aria-labelledby="limit-title">
+      <div class="container guide-wide">
+        <h2 id="limit-title" class="section-title">変更・取り消しの期限</h2>
+        <div class="guide-split">
+          <div>
+            <dl class="guide-facts">
+              <div><dt>期限</dt><dd>出勤する日の前日 23:59 まで</dd></div>
+              <div><dt>期限を過ぎたとき</dt><dd>アプリからは変更・取り消しできません。店舗の公式LINE からご相談ください。</dd></div>
+            </dl>
+            <p class="small-note">期限を過ぎた予定の詳細には「前日23:59を過ぎた出勤予定は、アプリから変更・取り消しできません。公式LINEからご相談ください。」と表示され、<span class="ui">変更する</span>・<span class="ui">取り消す</span> は表示されません。</p>
+            <ul class="message-list">
+              <li><q>別の操作でこの出勤予定が変更されていました。最新の内容を表示しています。</q><span>店舗などが先に予定を変更していました。表示された最新の内容を確かめてから、もう一度操作してください。</span></li>
+              <li><q>この出勤予定はすでに取り消されています。</q><span>予定はすでに取り消されています。</span></li>
+            </ul>
+            <p class="small-note">店舗の都合で、店舗が予定を変更・取り消すことがあります。</p>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 期限を過ぎた出勤予定の詳細: 公式LINEからご相談ください、の表示"><span class="shot-frame"><img src="/assets/img/guide/s-cal-detail-closed.jpg" alt="期限を過ぎた出勤予定の詳細: 公式LINEからご相談ください、の表示" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:42.4%;width:90%;height:10.4%" aria-hidden="true"></span></span></button><figcaption>期限を過ぎた予定の詳細</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section alt" aria-label="ほかのページ">
+      <div class="container narrow">
+        <h2 class="guide-menu-title">関連するよくある質問</h2>
+        <ul class="related-faq">
+          <li><a href="/guide/faq/#q-change-deadline">前日を過ぎた予定を変更・取り消したい</a></li>
+          <li><a href="/guide/faq/#q-room-released">予定を変更したら Room が解除された</a></li>
+          <li><a href="/guide/faq/#q-cancel-undo">取り消した予定を元に戻したい</a></li>
+          <li><a href="/guide/faq/#q-room-unassigned">Room が「未割当」と表示される</a></li>
+        </ul>
+        <nav class="guide-pager" aria-label="前後のページ">
+          <a class="prev" href="/guide/rooms/"><small>‹ 前のページ</small><span>ルーム予約・出勤予定の登録</span></a>
+          <a class="next" href="/guide/performance/"><small>次のページ ›</small><span>実績の確認</span></a>
+        </nav>
+        <h2 class="guide-menu-title">操作ガイドの目次</h2>
+        <ul class="topic-grid is-compact">
+          <li>
+            <a class="topic-card" href="/guide/login/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 15a4.5 4.5 0 1 1 4.33-5.75H22v3.5h-2.25V16h-3.5v-3.25h-4.92A4.5 4.5 0 0 1 7 15zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+              <span class="topic-card-title">はじめての利用・ログイン</span>
+              <span class="topic-card-text">最初のパスワードの設定、ログイン、パスワードを忘れたとき</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/home/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></span>
+              <span class="topic-card-title">ホーム画面</span>
+              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room の見方</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/rooms/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg></span>
+              <span class="topic-card-title">ルーム予約・出勤予定の登録</span>
+              <span class="topic-card-text">今月の出勤の追加と、翌月の出勤予定の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/calendar/" aria-current="page">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2.5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zM11 7v6.2l4.6 2.7 1.1-1.8-3.4-2V7z"/></svg></span>
+              <span class="topic-card-title">カレンダー・予定の変更と取り消し</span>
+              <span class="topic-card-text">登録した出勤予定の確認、変更、取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/performance/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10h3v10zm6.5 0V4h3v16zM17 20v-7h3v7z"/></svg></span>
+              <span class="topic-card-title">実績の確認</span>
+              <span class="topic-card-text">今月の実績と、期間・サイトを選んだポイントの集計</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/makeup/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-7.92 6.86l2.48.36A5.5 5.5 0 0 1 15.9 8.1L13.5 10.5H20V4l-2.3 2.3A7.96 7.96 0 0 0 12 4zm7.92 9.14l-2.48-.36A5.5 5.5 0 0 1 8.1 15.9l2.4-2.4H4V20l2.3-2.3A8 8 0 0 0 19.92 13.14z"/></svg></span>
+              <span class="topic-card-title">欠勤・補填</span>
+              <span class="topic-card-text">補填のお知らせと、補填日の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/account/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg></span>
+              <span class="topic-card-title">マイページ</span>
+              <span class="topic-card-text">アカウント情報、パスワードの変更、ログアウト</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/faq/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 16.25a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm1.3-5.1V14h-2.6v-1.6c0-1.2.8-1.9 1.7-2.45.75-.45 1.25-.85 1.25-1.6a1.65 1.65 0 0 0-3.3 0H7.75a4.25 4.25 0 0 1 8.5 0c0 1.85-1.2 2.75-2.25 3.3-.45.25-.7.45-.7.5z"/></svg></span>
+              <span class="topic-card-title">よくある質問</span>
+              <span class="topic-card-text">困ったときの確認事項</span>
+            </a>
+          </li>
+        </ul>
+        <p class="guide-back"><a href="/guide/">操作ガイドのトップへ</a> ・ <a href="/">公式サイトへ戻る</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span class="logo-text">Fairy</span> 出演者アプリ</p>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="/">公式サイト</a>
+        <a href="/guide/">操作ガイド</a>
+        <a href="https://privacy.fff-inc.com/support/">サポート</a>
+        <a href="https://privacy.fff-inc.com/">プライバシーポリシー</a>
+      </nav>
+      <p class="copyright">&copy; <span data-year>2026</span> Fairy</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/guide.js"></script>
+</body>
+</html>

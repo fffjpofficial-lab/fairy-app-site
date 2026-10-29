@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ホーム画面 | Fairy 操作ガイド</title>
+  <meta name="description" content="Fairy 出演者アプリのホーム画面の見方。今月のポイント、目標、補填のお知らせ、出勤と Room。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body class="guide">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Fairy 出演者アプリ トップ">
+        <img src="/assets/img/app-icon-512.png" alt="" width="36" height="36">
+        <span class="brand-word">Fairy</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span><span class="visually-hidden">メニュー</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="サイト内">
+        <a href="/guide/">操作ガイド</a>
+        <a href="/guide/faq/">よくある質問</a>
+        <a href="/#download">ダウンロード</a>
+        <a href="/#support">サポート</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero" aria-labelledby="page-title">
+      <div class="container narrow">
+        <nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">公式サイト</a></li><li><a href="/guide/">操作ガイド</a></li><li aria-current="page">ホーム画面</li></ol></nav>
+        <p class="eyebrow">操作ガイド</p>
+        <h1 id="page-title">ホーム画面</h1>
+        <p class="lead">アプリを開くと最初に表示される画面です。今月のポイントと目標、今日や次回の出勤と Room を確認できます。</p>
+        <nav class="guide-toc" aria-label="このページの内容">
+          <p class="guide-toc-title">このページの内容</p>
+          <ul>
+            <li><a href="#layout">画面の構成</a></li>
+            <li><a href="#points">今月のポイント</a></li>
+            <li><a href="#goal">目標の表示</a></li>
+            <li><a href="#makeup-notice">補填のお知らせ</a></li>
+            <li><a href="#shifts">出勤と Room</a></li>
+            <li><a href="#refresh">表示の更新</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="section guide-section" id="layout" aria-labelledby="layout-title">
+      <div class="container guide-wide">
+        <h2 id="layout-title" class="section-title">ホーム画面の構成</h2>
+        <div class="guide-split">
+          <div>
+            <p>アプリを開くと、最初にホーム画面が表示されます。上から順に、次の内容が並びます。</p>
+            <ol class="steps">
+              <li><strong>今月のポイント</strong><span>今月獲得したポイントと、目標に対する進み具合。タップすると実績の画面が開きます。</span></li>
+              <li><strong>補填のお知らせ</strong><span>補填日の登録が必要な欠勤や、アプリから登録できる日がなく店舗への相談が必要な欠勤があるときだけ表示されます。</span></li>
+              <li><strong>出勤</strong><span>出勤中・今日・次回の出勤の時間と Room。</span></li>
+            </ol>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: ホーム画面: 今月のポイント、補填のお知らせ、今日の出勤"><span class="shot-frame"><img src="/assets/img/guide/s-home-top.jpg" alt="ホーム画面: 今月のポイント、補填のお知らせ、今日の出勤" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:15.4%;width:90%;height:33.4%" aria-hidden="true"><span class="mark-label">1</span></span><span class="mark" style="left:5%;top:51%;width:90%;height:12.4%" aria-hidden="true"><span class="mark-label">2</span></span><span class="mark" style="left:5%;top:65.7%;width:90%;height:22%" aria-hidden="true"><span class="mark-label">3</span></span></span></button><figcaption>ホーム画面（表示は架空のデータです）</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="points" aria-labelledby="points-title">
+      <div class="container narrow">
+        <h2 id="points-title" class="section-title">今月のポイント</h2>
+        <p>今月獲得したポイントを大きく表示します。その下の「YYYY/MM/DD 更新」は、<strong>その日までの実績が反映されている</strong>ことを表します。</p>
+        <ul class="message-list">
+          <li><q>実績はまだ更新されていません</q><span>店舗の実績がまだ反映されていない状態です。0 pt という意味ではありません。</span></li>
+          <li><q>今月の実績はまだ反映されていません</q><span>今月分の実績がまだ確定していない状態です（月の初めなど）。0 pt という意味ではありません。</span></li>
+        </ul>
+        <p class="small-note">ポイントが表示されていても「YYYY/MM/DD 更新」の日付がないときは、どの日までの実績が反映されているかを確認できない状態です。</p>
+        <p class="small-note">実績は、店舗が日ごとに確定した後に反映されます。今日の分は、今日のうちには表示されません。詳しくは <a href="/guide/performance/#timing">実績の反映のタイミング</a> をご覧ください。</p>
+        <p>カード全体をタップすると、<a href="/guide/performance/">実績の画面</a> が開きます。</p>
+      </div>
+    </section>
+    <section class="section guide-section" id="goal" aria-labelledby="goal-title">
+      <div class="container narrow">
+        <h2 id="goal-title" class="section-title">目標の表示</h2>
+        <dl class="guide-facts">
+          <div><dt>達成率とバー</dt><dd>今月の目標に対して、今のポイントが何％か。</dd></div>
+          <div><dt>目標ペース</dt><dd>今月の出勤予定（通勤・在宅）のうち、これまでの時間から見た目標との差です。「+」なら目標のペースより多く、「−」なら少ないことを表します。</dd></div>
+          <div><dt>目標ポイント・残りポイント</dt><dd>今月の目標と、目標までの残り。達成すると「目標達成」と表示されます。</dd></div>
+        </dl>
+        <ul class="message-list">
+          <li><q>今月の目標は設定されていません</q><span>今月の目標がまだ設定されていません。目標は店舗が設定します。</span></li>
+          <li><q>今月は休止</q><q>目標は対象外です</q><span>今月が休止の月のときの表示です。獲得したポイントは表示されますが、目標・残りポイント・目標ペースは表示されません。</span></li>
+        </ul>
+        <p class="small-note">実績がまだ反映されていないときは、達成率と目標ペースは表示されず、残りポイントは「—」になります。今月の出勤予定がないときなども、目標ペースは表示されません。</p>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="makeup-notice" aria-labelledby="makeup-notice-title">
+      <div class="container narrow">
+        <h2 id="makeup-notice-title" class="section-title">補填のお知らせ</h2>
+        <p>補填日の登録が必要な欠勤や、アプリから登録できる日がなく店舗への相談が必要な欠勤があるときだけ、<span class="ui-text">⚠️ 補填が必要なスケジュールがあります</span> と表示されます（上の画面の ②）。<span class="ui">補填内容を確認する ›</span> を押すと、欠勤・補填の画面が開きます。</p>
+        <p>登録が必要な欠勤がないときは、このお知らせは表示されません。操作は <a href="/guide/makeup/">欠勤・補填</a> をご覧ください。</p>
+      </div>
+    </section>
+    <section class="section guide-section" id="shifts" aria-labelledby="shifts-title">
+      <div class="container guide-wide">
+        <h2 id="shifts-title" class="section-title">出勤と Room の表示</h2>
+        <div class="guide-split">
+          <div>
+            <dl class="guide-facts">
+              <div><dt>出勤中</dt><dd>前の日から続いている出勤が、今まさに出勤の時間のとき。</dd></div>
+              <div><dt>今日の出勤</dt><dd>今日始まる出勤の時間。1日に2回以上あるときは、すべて表示されます。</dd></div>
+              <div><dt>次回の出勤</dt><dd>今日の出勤がないとき（または終わったとき）の、次の出勤。</dd></div>
+            </dl>
+            <p>時間は「18:00 〜 23:00」のように表示されます。日をまたぐ出勤は「18:00 〜 翌 00:00」のように「翌」が付きます。出勤の時間の間は「出勤中」の印が付きます。</p>
+            <h3 class="sub-title">Room の表示</h3>
+            <ul class="plain-list">
+              <li><strong>Room ○○</strong>: 店舗が割り当てた Room です。</li>
+              <li><strong>Room 未割当</strong>: Room はまだ割り当てられていません。<strong>Room は店舗が割り当てます</strong>。出勤予定はそのまま有効です。</li>
+              <li><strong>在宅</strong>: 在宅の出勤には Room はありません。</li>
+            </ul>
+            <p>Room の行をタップすると、出勤予定の詳細が開きます。詳細から予定の変更・取り消しができます（<a href="/guide/calendar/#detail">出勤予定の詳細</a>）。</p>
+            <p class="small-note">今月の出勤予定がもうないときは「今月の残り出勤予定はありません。」と表示されます。</p>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: ホームの今日の出勤: 時間、出勤中の印、Room 3 の行"><span class="shot-frame"><img src="/assets/img/guide/s-home-shift.jpg" alt="ホームの今日の出勤: 時間、出勤中の印、Room 3 の行" width="600" height="1304" loading="lazy"><span class="mark" style="left:11%;top:76.3%;width:79%;height:6.5%" aria-hidden="true"></span></span></button><figcaption>Room の行をタップすると詳細が開きます</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="refresh" aria-labelledby="refresh-title">
+      <div class="container narrow">
+        <h2 id="refresh-title" class="section-title">表示の更新</h2>
+        <ul class="plain-list">
+          <li>画面を下に引っ張ると、最新の内容を読み込みます。</li>
+          <li>少し時間をおいてアプリに戻ったときや、日付が変わったときにも、自動で読み込み直します。</li>
+          <li>出勤予定の登録・変更・取り消し、補填日の登録の後は、すぐに反映されます。</li>
+        </ul>
+        <ul class="message-list">
+          <li><q>出勤予定を取得できませんでした。</q><span>通信の状態を確認して、<span class="ui">再試行</span> を押してください。</span></li>
+          <li><q>補填情報を取得できませんでした</q><span>補填のお知らせの場所に表示されます。<span class="ui">再読み込み</span> を押してください。</span></li>
+          <li><q>実績を取得できませんでした。</q><span>同じく <span class="ui">再試行</span> を押してください。何度もこの表示になるときは店舗にご相談ください。</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section alt" aria-label="ほかのページ">
+      <div class="container narrow">
+        <h2 class="guide-menu-title">関連するよくある質問</h2>
+        <ul class="related-faq">
+          <li><a href="/guide/faq/#q-room-unassigned">Room が「未割当」と表示される</a></li>
+          <li><a href="/guide/faq/#q-points-today">今日のポイントが表示されない</a></li>
+          <li><a href="/guide/faq/#q-pause">休止の月に出勤を登録できない</a></li>
+        </ul>
+        <nav class="guide-pager" aria-label="前後のページ">
+          <a class="prev" href="/guide/login/"><small>‹ 前のページ</small><span>はじめての利用・ログイン</span></a>
+          <a class="next" href="/guide/rooms/"><small>次のページ ›</small><span>ルーム予約・出勤予定の登録</span></a>
+        </nav>
+        <h2 class="guide-menu-title">操作ガイドの目次</h2>
+        <ul class="topic-grid is-compact">
+          <li>
+            <a class="topic-card" href="/guide/login/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 15a4.5 4.5 0 1 1 4.33-5.75H22v3.5h-2.25V16h-3.5v-3.25h-4.92A4.5 4.5 0 0 1 7 15zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+              <span class="topic-card-title">はじめての利用・ログイン</span>
+              <span class="topic-card-text">最初のパスワードの設定、ログイン、パスワードを忘れたとき</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/home/" aria-current="page">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></span>
+              <span class="topic-card-title">ホーム画面</span>
+              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room の見方</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/rooms/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg></span>
+              <span class="topic-card-title">ルーム予約・出勤予定の登録</span>
+              <span class="topic-card-text">今月の出勤の追加と、翌月の出勤予定の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/calendar/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2.5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zM11 7v6.2l4.6 2.7 1.1-1.8-3.4-2V7z"/></svg></span>
+              <span class="topic-card-title">カレンダー・予定の変更と取り消し</span>
+              <span class="topic-card-text">登録した出勤予定の確認、変更、取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/performance/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10h3v10zm6.5 0V4h3v16zM17 20v-7h3v7z"/></svg></span>
+              <span class="topic-card-title">実績の確認</span>
+              <span class="topic-card-text">今月の実績と、期間・サイトを選んだポイントの集計</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/makeup/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-7.92 6.86l2.48.36A5.5 5.5 0 0 1 15.9 8.1L13.5 10.5H20V4l-2.3 2.3A7.96 7.96 0 0 0 12 4zm7.92 9.14l-2.48-.36A5.5 5.5 0 0 1 8.1 15.9l2.4-2.4H4V20l2.3-2.3A8 8 0 0 0 19.92 13.14z"/></svg></span>
+              <span class="topic-card-title">欠勤・補填</span>
+              <span class="topic-card-text">補填のお知らせと、補填日の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/account/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg></span>
+              <span class="topic-card-title">マイページ</span>
+              <span class="topic-card-text">アカウント情報、パスワードの変更、ログアウト</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/faq/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 16.25a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm1.3-5.1V14h-2.6v-1.6c0-1.2.8-1.9 1.7-2.45.75-.45 1.25-.85 1.25-1.6a1.65 1.65 0 0 0-3.3 0H7.75a4.25 4.25 0 0 1 8.5 0c0 1.85-1.2 2.75-2.25 3.3-.45.25-.7.45-.7.5z"/></svg></span>
+              <span class="topic-card-title">よくある質問</span>
+              <span class="topic-card-text">困ったときの確認事項</span>
+            </a>
+          </li>
+        </ul>
+        <p class="guide-back"><a href="/guide/">操作ガイドのトップへ</a> ・ <a href="/">公式サイトへ戻る</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span class="logo-text">Fairy</span> 出演者アプリ</p>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="/">公式サイト</a>
+        <a href="/guide/">操作ガイド</a>
+        <a href="https://privacy.fff-inc.com/support/">サポート</a>
+        <a href="https://privacy.fff-inc.com/">プライバシーポリシー</a>
+      </nav>
+      <p class="copyright">&copy; <span data-year>2026</span> Fairy</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/guide.js"></script>
+</body>
+</html>
