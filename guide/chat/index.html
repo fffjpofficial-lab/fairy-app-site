@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>チャット | Fairy 操作ガイド</title>
+  <meta name="description" content="Fairy 出演者アプリのチャットの使い方。メッセージと画像の送受信、既読、送信の取り消し、画像の保存期間。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-64.png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <link rel="stylesheet" href="/assets/css/guide.css">
+</head>
+<body class="guide">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/" aria-label="Fairy 出演者アプリ トップ">
+        <img src="/assets/img/app-icon-512.png" alt="" width="36" height="36">
+        <span class="brand-word">Fairy</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span><span class="visually-hidden">メニュー</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="サイト内">
+        <a href="/guide/">操作ガイド</a>
+        <a href="/guide/faq/">よくある質問</a>
+        <a href="/#download">ダウンロード</a>
+        <a href="/#support">サポート</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="guide-hero" aria-labelledby="page-title">
+      <div class="container narrow">
+        <nav class="breadcrumb" aria-label="現在地"><ol><li><a href="/">公式サイト</a></li><li><a href="/guide/">操作ガイド</a></li><li aria-current="page">チャット</li></ol></nav>
+        <p class="eyebrow">操作ガイド</p>
+        <h1 id="page-title">チャット</h1>
+        <p class="lead">所属店舗のスタッフと、メッセージや画像をやり取りできます。送ったメッセージは、店舗が読むと「既読」になります。</p>
+        <nav class="guide-toc" aria-label="このページの内容">
+          <p class="guide-toc-title">このページの内容</p>
+          <ul>
+            <li><a href="#open">チャットを開く</a></li>
+            <li><a href="#read">メッセージの見方</a></li>
+            <li><a href="#send-text">メッセージを送る</a></li>
+            <li><a href="#send-images">画像を送る</a></li>
+            <li><a href="#view-images">受け取った画像を見る</a></li>
+            <li><a href="#expired">画像の保存期間</a></li>
+            <li><a href="#retract">送信を取り消す</a></li>
+            <li><a href="#messages">表示されるメッセージ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="section guide-section" id="open" aria-labelledby="open-title">
+      <div class="container guide-wide">
+        <h2 id="open-title" class="section-title">チャットを開く</h2>
+        <div class="guide-split">
+          <div>
+            <ol class="steps">
+              <li><strong>画面の下のまん中の丸いボタン <span class="ui">チャット</span> を押します。</strong><span>店舗からのまだ読んでいないメッセージがあると、ボタンに件数が付きます（100件以上は「99+」）。</span></li>
+              <li><strong>「チャット」の画面が開きます。</strong><span>店舗とのメッセージが、古いものから順に並びます。開くと、件数の表示は消えます。</span></li>
+              <li><strong>左上の <span class="ui">‹</span> で、元の画面に戻ります。</strong></li>
+            </ol>
+            <div class="notice notice-blue">
+              <p class="notice-title">チャットの相手は、所属店舗のスタッフです</p>
+              <p>ほかの出演者とはやり取りできません。新しいメッセージはベルの一覧には入らず、チャットのボタンの件数でお知らせします。Push 通知については <a href="/guide/notifications/#push">通知・お知らせ</a> をご覧ください。</p>
+            </div>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: ホーム画面の下のチャットのボタンと件数"><span class="shot-frame"><img src="/assets/img/guide/s-home-top.jpg" alt="ホーム画面の下のチャットのボタンと件数" width="600" height="1304" loading="lazy"><span class="mark" style="left:41%;top:84.2%;width:18%;height:9.6%" aria-hidden="true"></span></span></button><figcaption>まん中の丸いボタンがチャットです（表示は架空のデータです）</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="read" aria-labelledby="read-title">
+      <div class="container guide-wide">
+        <h2 id="read-title" class="section-title">メッセージの見方</h2>
+        <div class="guide-split">
+          <div>
+            <dl class="guide-facts">
+              <div><dt>店舗のメッセージ</dt><dd>画面の左側に、アイコンと一緒に表示されます。</dd></div>
+              <div><dt>自分のメッセージ</dt><dd>画面の右側に、紫色で表示されます。</dd></div>
+              <div><dt>日付</dt><dd>日付が変わるところに「2026-11-17」のような日付の行が入ります。各メッセージには送った時刻（「19:02」など）が付きます。</dd></div>
+              <div><dt>既読</dt><dd>自分のメッセージを店舗のスタッフが読むと、メッセージの横に「既読」が付きます。</dd></div>
+            </dl>
+            <p>前のメッセージは、画面を上へスクロールすると読み込まれます。</p>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: チャットの画面: 店舗のメッセージ、自分のメッセージ、既読"><span class="shot-frame"><img src="/assets/img/guide/s-chat.jpg" alt="チャットの画面: 店舗のメッセージ、自分のメッセージ、既読" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:30.4%;width:72%;height:10.6%" aria-hidden="true"><span class="mark-label">1</span></span><span class="mark" style="left:24%;top:41.3%;width:72%;height:5.9%" aria-hidden="true"><span class="mark-label">2</span></span><span class="mark" style="left:15%;top:47.4%;width:10%;height:3.8%" aria-hidden="true"><span class="mark-label">3</span></span></span></button><figcaption>① 店舗のメッセージ　② 自分のメッセージ　③ 既読（表示は架空のデータです）</figcaption></figure>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section" id="send-text" aria-labelledby="send-text-title">
+      <div class="container narrow">
+        <h2 id="send-text-title" class="section-title">メッセージを送る</h2>
+        <ol class="steps shot-steps">
+          <li class="has-shot"><div class="step-text"><strong>画面の下の <span class="ui">メッセージを入力</span> の欄に、メッセージを入力します。</strong><span>改行もできます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: メッセージを入力の欄"><span class="shot-frame"><img src="/assets/img/guide/s-chat.jpg" alt="メッセージを入力の欄" width="600" height="1304" loading="lazy"><span class="mark" style="left:15%;top:88.6%;width:70%;height:5.6%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>右の送信のボタン（紙飛行機の形）を押します。</strong><span>送ったメッセージが、画面の右側に表示されます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 送信のボタン"><span class="shot-frame"><img src="/assets/img/guide/s-chat.jpg" alt="送信のボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:85%;top:88.6%;width:11%;height:5.6%" aria-hidden="true"></span></span></button></figure></li>
+        </ol>
+        <dl class="guide-facts">
+          <div><dt>文字数</dt><dd>1回に5,000文字まで。4,500文字を超えると、入力欄の下に「4,600 / 5,000」のように文字数が表示されます。</dd></div>
+          <div><dt>送れないとき</dt><dd>何も入力していないとき、5,000文字を超えたときは、送信のボタンを押せません。</dd></div>
+        </dl>
+        <p class="small-note">入力中の文字は、画像の送信に切り替えても消えません。</p>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="send-images" aria-labelledby="send-images-title">
+      <div class="container guide-wide">
+        <h2 id="send-images-title" class="section-title">画像を送る</h2>
+        <div class="guide-split">
+          <div>
+            <ol class="steps shot-steps">
+              <li><div class="step-text"><strong>入力欄の左の画像のボタンを押します。</strong><span>端末の写真の一覧が開きます。初めてのときは、写真へのアクセスの許可を求められることがあります。</span></div></li>
+              <li><div class="step-text"><strong>送る画像を選びます。</strong><span>1回に10枚まで選べます。</span></div></li>
+              <li class="has-shot"><div class="step-text"><strong>入力欄の上に、選んだ画像の確認が表示されます。</strong><span>「画像 3枚（最大10枚）」のように枚数が表示されます。画像の右上の × でその画像を外せます。<span class="ui">追加</span> で画像を足せます。やめるときは <span class="ui">キャンセル</span> を押します。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 選んだ画像の確認: 枚数、画像、キャンセル・追加・画像を送信"><span class="shot-frame"><img src="/assets/img/guide/s-chat-image-preview.jpg" alt="選んだ画像の確認: 枚数、画像、キャンセル・追加・画像を送信" width="600" height="1304" loading="lazy"><span class="mark" style="left:2.5%;top:75.4%;width:66%;height:13.6%" aria-hidden="true"></span></span></button></figure></li>
+              <li class="has-shot"><div class="step-text"><strong><span class="ui">画像を送信</span> を押します。</strong><span>送信中は「送信中…」と表示されます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 画像を送信のボタン"><span class="shot-frame"><img src="/assets/img/guide/s-chat-image-preview.jpg" alt="画像を送信のボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:67.5%;top:88.6%;width:30%;height:5.4%" aria-hidden="true"></span></span></button></figure></li>
+              <li class="has-shot"><div class="step-text"><strong>選んだ画像が、1つのメッセージとして画面の右側に表示されます。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 送った画像: 3枚のメッセージ"><span class="shot-frame"><img src="/assets/img/guide/s-chat-image-sent.jpg" alt="送った画像: 3枚のメッセージ" width="600" height="1304" loading="lazy"><span class="mark" style="left:23%;top:52%;width:74%;height:34.5%" aria-hidden="true"></span></span></button></figure></li>
+            </ol>
+            <div class="notice notice-blue">
+              <p class="notice-title">メッセージ（文字）と画像は別々に送ります</p>
+              <p>1回の送信は、文字だけ、または画像だけです。文字と画像を一緒には送れません。入力中の文字は、画像を送った後も入力欄に残ります。</p>
+            </div>
+          </div>
+<figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 入力欄の左の画像のボタン"><span class="shot-frame"><img src="/assets/img/guide/s-chat.jpg" alt="入力欄の左の画像のボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:3.5%;top:88.6%;width:11%;height:5.6%" aria-hidden="true"></span></span></button><figcaption>画像のボタン（表示は架空のデータです）</figcaption></figure>
+        </div>
+        <h3 class="sub-title">送れる画像</h3>
+        <dl class="guide-facts">
+          <div><dt>形式</dt><dd>JPEG・PNG・HEIC・WebP</dd></div>
+          <div><dt>大きさ</dt><dd>元の画像は1枚20MBまで。送るときにアプリが自動で小さくします（写真の撮影日時や位置などの情報は送られません）。</dd></div>
+          <div><dt>枚数</dt><dd>1回に10枚まで</dd></div>
+        </dl>
+        <ul class="message-list">
+          <li><q>メッセージと画像は別々に送信してください。</q><span>文字と画像を一緒には送れません。どちらかずつ送ってください。</span></li>
+          <li><q>画像は1回に10枚まで送れます。</q><span>選ぶ枚数を10枚以内にしてください。</span></li>
+          <li><q>この形式の画像は送れません。JPEG・PNG・HEIC・WebPの画像を選んでください。</q><span>別の画像を選んでください。</span></li>
+          <li><q>1枚20MBまでの画像を選んでください。</q><span>大きすぎる画像は送れません。</span></li>
+          <li><q>写真へのアクセスが許可されていません。端末の設定から許可してください。</q><span>端末の「設定」で、Fairy に写真へのアクセスを許可してください。</span></li>
+          <li><q>画像の準備の期限が切れました。もう一度送信してください。</q><span>もう一度 <span class="ui">画像を送信</span> を押してください。</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section guide-section" id="view-images" aria-labelledby="view-images-title">
+      <div class="container narrow">
+        <h2 id="view-images-title" class="section-title">受け取った画像を見る</h2>
+        <ol class="steps shot-steps">
+          <li class="has-shot"><div class="step-text"><strong>店舗から届いた画像は、画面の左側に表示されます。</strong><span>画像が1枚のときは大きく、2枚以上のときは2列に並びます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 店舗から届いた2枚の画像"><span class="shot-frame"><img src="/assets/img/guide/s-chat-received.jpg" alt="店舗から届いた2枚の画像" width="600" height="1304" loading="lazy"><span class="mark" style="left:12.5%;top:69.4%;width:64.5%;height:16%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>画像をタップすると、画面いっぱいに表示されます。</strong><span>上に「1 / 2」のように何枚目かが表示されます。左右にスワイプすると、同じメッセージのほかの画像に切り替わります。2本の指で広げると拡大できます。左上の ×（閉じる）でチャットの画面に戻ります。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 画像の全画面の表示: 閉じるボタンと枚数"><span class="shot-frame"><img src="/assets/img/guide/s-chat-viewer.jpg" alt="画像の全画面の表示: 閉じるボタンと枚数" width="600" height="1304" loading="lazy"><span class="mark" style="left:2.5%;top:8.3%;width:9%;height:5.2%" aria-hidden="true"></span><span class="mark" style="left:42%;top:8.6%;width:16%;height:4.4%" aria-hidden="true"></span></span></button></figure></li>
+        </ol>
+        <p class="small-note">アプリの中には、画像を保存・ダウンロード・共有する操作はありません。</p>
+        <ul class="message-list">
+          <li><q>画像を表示できません</q><span>通信の状態を確認して、チャットを開き直してください。</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="expired" aria-labelledby="expired-title">
+      <div class="container narrow">
+        <h2 id="expired-title" class="section-title">画像の保存期間</h2>
+        <p>チャットの画像は、<strong>送信から1か月</strong>を過ぎると見られなくなります。画像の場所は送られた枚数分の灰色の枠になり、<span class="ui-text">保存期間が終了したため、画像を表示できません</span> と表示されます。</p>
+        <p>メッセージの文字は、送信から1年を過ぎると表示されなくなります。</p>
+        <figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: 保存期間を過ぎた画像の灰色の枠"><span class="shot-frame"><img src="/assets/img/guide/s-chat-expired.jpg" alt="保存期間を過ぎた画像の灰色の枠と、保存期間が終了したため、画像を表示できませんの表示" width="600" height="1304" loading="lazy"><span class="mark" style="left:12%;top:20.3%;width:66%;height:26%" aria-hidden="true"></span></span></button><figcaption>保存期間を過ぎた画像（表示は架空のデータです）</figcaption></figure>
+        <div class="notice notice-blue">
+          <p class="notice-title">必要な画像は、期間の中で確認してください</p>
+          <p>保存期間を過ぎた画像は、店舗に頼んでも表示できるようにはなりません。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section" id="retract" aria-labelledby="retract-title">
+      <div class="container narrow">
+        <h2 id="retract-title" class="section-title">送信を取り消す</h2>
+        <p>自分が送ったメッセージ（文字・画像）は、送信を取り消せます。</p>
+        <ol class="steps shot-steps">
+          <li class="has-shot"><div class="step-text"><strong>取り消すメッセージを長押しします。</strong></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 自分のメッセージを長押し"><span class="shot-frame"><img src="/assets/img/guide/s-chat.jpg" alt="自分のメッセージを長押し" width="600" height="1304" loading="lazy"><span class="mark" style="left:24%;top:41.3%;width:72%;height:5.9%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>「このメッセージの送信を取り消しますか？」と表示されたら、<span class="ui">送信を取り消す</span> を押します。</strong><span>やめるときは <span class="ui">キャンセル</span> を押します。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: 送信の取り消しの確認"><span class="shot-frame"><img src="/assets/img/guide/s-chat-cancel-confirm.jpg" alt="送信の取り消しの確認: キャンセルと送信を取り消すのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:51%;top:52.4%;width:38%;height:5%" aria-hidden="true"></span></span></button></figure></li>
+          <li class="has-shot"><div class="step-text"><strong>メッセージの場所に「メッセージの送信を取り消しました」と表示されます。</strong><span>店舗の画面でも、取り消されたことが表示されます。</span></div><figure class="step-shot"><button class="zoom" type="button" aria-label="画像を拡大: メッセージの送信を取り消しましたの表示"><span class="shot-frame"><img src="/assets/img/guide/s-chat-cancelled.jpg" alt="メッセージの送信を取り消しましたの表示" width="600" height="1304" loading="lazy"><span class="mark" style="left:31%;top:67%;width:66%;height:5.2%" aria-hidden="true"></span></span></button></figure></li>
+        </ol>
+        <div class="notice notice-info">
+          <p class="notice-title">取り消したメッセージは元に戻せません</p>
+          <p>店舗のスタッフが取り消したメッセージも、同じく「メッセージの送信を取り消しました」と表示されます。</p>
+        </div>
+      </div>
+    </section>
+    <section class="section guide-section alt" id="messages" aria-labelledby="messages-title">
+      <div class="container narrow">
+        <h2 id="messages-title" class="section-title">表示されるメッセージ</h2>
+        <ul class="message-list">
+          <li><q>まだメッセージはありません。店舗のスタッフにメッセージを送れます。</q><span>まだやり取りがない状態です。最初のメッセージを送れます。</span></li>
+          <li><q>接続が不安定です。新しいメッセージの表示が遅れることがあります。</q><span>通信の状態がよくないときの表示です。通信が戻ると、自動で読み込み直します。</span></li>
+          <li><q>チャットを読み込めませんでした。通信状態を確認して、もう一度お試しください。</q><span><span class="ui">再読み込み</span> を押してください。</span></li>
+          <li><q>送信できませんでした。通信状態を確認して、もう一度お試しください。</q><span>通信の状態を確認して、もう一度送ってください。</span></li>
+          <li><q>現在の店舗に在籍していないため、送信できません。</q><span>店舗の担当者へお問い合わせください。</span></li>
+          <li><q>このメッセージは取り消せません。</q><span>取り消せないメッセージです。</span></li>
+          <li><q>ログインの有効期限が切れました。もう一度ログインしてください。</q><span>ログインし直してください。</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section alt" aria-label="ほかのページ">
+      <div class="container narrow">
+        <h2 class="guide-menu-title">関連するよくある質問</h2>
+        <ul class="related-faq">
+          <li><a href="/guide/faq/#q-chat-where">チャットはどこから開きますか</a></li>
+          <li><a href="/guide/faq/#q-chat-image-text">メッセージと画像を一緒に送れない</a></li>
+          <li><a href="/guide/faq/#q-chat-retract">送ったメッセージを取り消したい</a></li>
+          <li><a href="/guide/faq/#q-chat-gray">画像が灰色の枠になっている</a></li>
+        </ul>
+        <nav class="guide-pager" aria-label="前後のページ">
+          <a class="prev" href="/guide/makeup/"><small>‹ 前のページ</small><span>欠勤・補填</span></a>
+          <a class="next" href="/guide/notifications/"><small>次のページ ›</small><span>通知・お知らせ</span></a>
+        </nav>
+        <h2 class="guide-menu-title">操作ガイドの目次</h2>
+        <ul class="topic-grid is-compact">
+          <li>
+            <a class="topic-card" href="/guide/login/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 15a4.5 4.5 0 1 1 4.33-5.75H22v3.5h-2.25V16h-3.5v-3.25h-4.92A4.5 4.5 0 0 1 7 15zm0-2.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg></span>
+              <span class="topic-card-title">はじめての利用・ログイン</span>
+              <span class="topic-card-text">最初のパスワードの設定、ログイン、パスワードを忘れたとき</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/home/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></span>
+              <span class="topic-card-title">ホーム画面</span>
+              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room、ベル</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/rooms/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 7h14v10H5zm2 2v2h2v-2zm4 0v2h2v-2zm4 0v2h2v-2z"/></svg></span>
+              <span class="topic-card-title">ルーム予約・出勤予定の登録</span>
+              <span class="topic-card-text">今月の出勤の追加と、翌月の出勤予定の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/calendar/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2.5a7.5 7.5 0 1 1 0 15 7.5 7.5 0 0 1 0-15zM11 7v6.2l4.6 2.7 1.1-1.8-3.4-2V7z"/></svg></span>
+              <span class="topic-card-title">カレンダー・予定の変更と取り消し</span>
+              <span class="topic-card-text">登録した出勤予定の確認、変更、取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/performance/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V10h3v10zm6.5 0V4h3v16zM17 20v-7h3v7z"/></svg></span>
+              <span class="topic-card-title">実績の確認</span>
+              <span class="topic-card-text">今月の実績と、期間・サイトを選んだポイントの集計</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/makeup/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 0 0-7.92 6.86l2.48.36A5.5 5.5 0 0 1 15.9 8.1L13.5 10.5H20V4l-2.3 2.3A7.96 7.96 0 0 0 12 4zm7.92 9.14l-2.48-.36A5.5 5.5 0 0 1 8.1 15.9l2.4-2.4H4V20l2.3-2.3A8 8 0 0 0 19.92 13.14z"/></svg></span>
+              <span class="topic-card-title">欠勤・補填</span>
+              <span class="topic-card-text">補填のお知らせと、補填日の登録</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/chat/" aria-current="page">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg></span>
+              <span class="topic-card-title">チャット</span>
+              <span class="topic-card-text">店舗とのメッセージ・画像のやり取り、既読、送信の取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/notifications/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg></span>
+              <span class="topic-card-title">通知・お知らせ</span>
+              <span class="topic-card-text">ベル、お知らせ、Push 通知、通知設定</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/account/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg></span>
+              <span class="topic-card-title">マイページ</span>
+              <span class="topic-card-text">アカウント情報、通知設定、パスワードの変更、ログアウト</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/faq/">
+              <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 16.25a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zm1.3-5.1V14h-2.6v-1.6c0-1.2.8-1.9 1.7-2.45.75-.45 1.25-.85 1.25-1.6a1.65 1.65 0 0 0-3.3 0H7.75a4.25 4.25 0 0 1 8.5 0c0 1.85-1.2 2.75-2.25 3.3-.45.25-.7.45-.7.5z"/></svg></span>
+              <span class="topic-card-title">よくある質問</span>
+              <span class="topic-card-text">困ったときの確認事項</span>
+            </a>
+          </li>
+        </ul>
+        <p class="guide-back"><a href="/guide/">操作ガイドのトップへ</a> ・ <a href="/">公式サイトへ戻る</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand"><span class="logo-text">Fairy</span> 出演者アプリ</p>
+      <nav class="footer-nav" aria-label="フッター">
+        <a href="/">公式サイト</a>
+        <a href="/guide/">操作ガイド</a>
+        <a href="https://privacy.fff-inc.com/support/">サポート</a>
+        <a href="https://privacy.fff-inc.com/">プライバシーポリシー</a>
+      </nav>
+      <p class="copyright">&copy; <span data-year>2026</span> Fairy</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/site.js"></script>
+  <script src="/assets/js/guide.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>よくある質問 | Fairy 操作ガイド</title>
-  <meta name="description" content="Fairy 出演者アプリのよくある質問。ログイン、出勤の登録、予定の変更、補填、実績について。">
+  <meta name="description" content="Fairy 出演者アプリのよくある質問。ログイン、出勤の登録、予定の変更、補填、実績、チャット、通知・お知らせについて。">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#ffffff">
   <meta name="format-detection" content="telephone=no">
@@ -48,6 +48,8 @@
             <li><a href="#faq-calendar">予定の確認・変更</a></li>
             <li><a href="#faq-makeup">欠勤・補填</a></li>
             <li><a href="#faq-performance">実績</a></li>
+            <li><a href="#faq-chat">チャット</a></li>
+            <li><a href="#faq-notifications">通知・お知らせ</a></li>
             <li><a href="#faq-other">そのほか</a></li>
           </ul>
         </nav>
@@ -97,7 +99,7 @@
           <div class="faq-list">
           <details class="faq-item" id="q-room-select">
             <summary>ルーム予約で Room を選べません。</summary>
-            <div class="faq-answer"><p>「ルーム予約」は、出勤する日時を登録する画面です。Room は店舗が割り当てます。割り当てられると、ホームやカレンダーに表示されます。</p><p><a href="/guide/rooms/#about">ルーム予約とは</a></p></div>
+            <div class="faq-answer"><p>「ルーム予約」は、出勤する日時を登録する画面です。Room は店舗が割り当てます。割り当てられると、ホームやカレンダーに表示されます。出勤する日に Room が決まると、ベルと Push 通知でもお知らせします。</p><p><a href="/guide/rooms/#about">ルーム予約とは</a></p></div>
           </details>
           <details class="faq-item" id="q-approval">
             <summary>登録した出勤は、店舗の承認が必要ですか。</summary>
@@ -126,7 +128,7 @@
           <div class="faq-list">
           <details class="faq-item" id="q-room-unassigned">
             <summary>Room が「未割当」と表示されます。</summary>
-            <div class="faq-answer"><p>Room がまだ割り当てられていない状態です。Room は店舗が割り当てます。未割当でも出勤予定は有効です。</p></div>
+            <div class="faq-answer"><p>Room がまだ割り当てられていない状態です。Room は店舗が割り当てます。未割当でも出勤予定は有効です。出勤する日に Room が決まると、ベルと Push 通知で「本日のルームが決まりました」とお知らせします。</p></div>
           </details>
           <details class="faq-item" id="q-change-deadline">
             <summary>前日を過ぎた予定を変更・取り消したいです。</summary>
@@ -172,6 +174,60 @@
           </details>
           </div>
         </section>
+        <section class="faq-group" id="faq-chat" aria-labelledby="faq-chat-title">
+          <h2 id="faq-chat-title"><span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg></span>チャット</h2>
+          <div class="faq-list">
+          <details class="faq-item" id="q-chat-where">
+            <summary>チャットはどこから開きますか。</summary>
+            <div class="faq-answer"><p>画面の下のまん中の丸いボタン <span class="ui">チャット</span> から開きます。所属店舗のスタッフとメッセージや画像をやり取りできます。チャットが表示されないときは、アプリを最新のバージョンに更新してください。</p><p><a href="/guide/chat/#open">チャットを開く</a></p></div>
+          </details>
+          <details class="faq-item" id="q-chat-image-text">
+            <summary>メッセージと画像を一緒に送れません。</summary>
+            <div class="faq-answer"><p>1回の送信は、文字だけ、または画像だけです。文字と画像は別々に送ってください。入力中の文字は、画像を送った後も入力欄に残ります。</p><p><a href="/guide/chat/#send-images">画像を送る</a></p></div>
+          </details>
+          <details class="faq-item" id="q-chat-image-limit">
+            <summary>画像は何枚まで送れますか。</summary>
+            <div class="faq-answer"><p>1回に10枚までです。形式は JPEG・PNG・HEIC・WebP で、元の画像は1枚20MBまでです。</p></div>
+          </details>
+          <details class="faq-item" id="q-chat-retract">
+            <summary>送ったメッセージを取り消したいです。</summary>
+            <div class="faq-answer"><p>自分のメッセージを長押しし、<span class="ui">送信を取り消す</span> を押します。取り消したメッセージは元に戻せません。</p><p><a href="/guide/chat/#retract">送信を取り消す</a></p></div>
+          </details>
+          <details class="faq-item" id="q-chat-gray">
+            <summary>チャットの画像が灰色の枠になっています。</summary>
+            <div class="faq-answer"><p>画像の保存期間（送信から1か月）が過ぎたため、表示できなくなった画像です。「保存期間が終了したため、画像を表示できません」と表示されます。もう一度表示することはできません。</p><p><a href="/guide/chat/#expired">画像の保存期間</a></p></div>
+          </details>
+          <details class="faq-item" id="q-chat-save">
+            <summary>チャットの画像を保存できますか。</summary>
+            <div class="faq-answer"><p>アプリの中には、画像を保存・ダウンロード・共有する操作はありません。</p></div>
+          </details>
+          </div>
+        </section>
+        <section class="faq-group" id="faq-notifications" aria-labelledby="faq-notifications-title">
+          <h2 id="faq-notifications-title"><span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg></span>通知・お知らせ</h2>
+          <div class="faq-list">
+          <details class="faq-item" id="q-push-not-received">
+            <summary>Push 通知が届きません。</summary>
+            <div class="faq-answer"><p>次の順に確かめてください。</p><ol><li>マイページの <span class="ui">通知設定</span> で「端末の通知: オン」になっているか。オフのときは <span class="ui">端末の設定を開く</span> から許可します。</li><li>届かない種類（チャット・お知らせ・ルーム・補填）のスイッチがオンになっているか。</li><li>端末の「おやすみモード」「集中モード」や省電力の設定。</li><li>ログインしているか（ログアウト中は届きません）。</li></ol><p>アプリを開いて使っている間は、Push 通知は表示されません。ベルとチャットの件数で確認できます。</p><p><a href="/guide/notifications/#device">Push 通知が届かないとき</a></p></div>
+          </details>
+          <details class="faq-item" id="q-notif-permission-later">
+            <summary>通知の許可を後から変えたいです。</summary>
+            <div class="faq-answer"><p>マイページの <span class="ui">通知設定</span> を開きます。「端末の通知: 未設定」のときは <span class="ui">通知を許可する</span>、「端末の通知: オフ」のときは <span class="ui">端末の設定を開く</span> から変えられます。</p><p><a href="/guide/notifications/#settings">通知設定</a></p></div>
+          </details>
+          <details class="faq-item" id="q-chat-not-in-bell">
+            <summary>チャットの新着がベルに表示されません。</summary>
+            <div class="faq-answer"><p>チャットはベルの一覧には入りません。画面の下の <span class="ui">チャット</span> のボタンに、まだ読んでいないメッセージの件数が付きます。</p></div>
+          </details>
+          <details class="faq-item" id="q-announcement-where">
+            <summary>お知らせはどこで見られますか。</summary>
+            <div class="faq-answer"><p>ホームの右上のベルを押し、「通知」の画面のいちばん上の <span class="ui">お知らせの一覧</span> から開きます。「新しいお知らせがあります」の通知を押すと、そのお知らせが直接開きます。</p><p><a href="/guide/notifications/#announcements">お知らせ</a></p></div>
+          </details>
+          <details class="faq-item" id="q-room-notice-again">
+            <summary>Room が変わったのに通知が来ません。</summary>
+            <div class="faq-answer"><p>ルームの通知は、1つの出勤予定につき1回だけです。その後に Room が変わったり、割り当てが解除されたりしても、もう一度は通知されません。最新の Room はホームやカレンダーで確認してください。</p></div>
+          </details>
+          </div>
+        </section>
         <section class="faq-group" id="faq-other" aria-labelledby="faq-other-title">
           <h2 id="faq-other-title"><span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2.5V17h16V7.5l-8 5z"/></svg></span>そのほか</h2>
           <div class="faq-list">
@@ -214,7 +270,7 @@
             <a class="topic-card" href="/guide/home/">
               <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></span>
               <span class="topic-card-title">ホーム画面</span>
-              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room の見方</span>
+              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room、ベル</span>
             </a>
           </li>
           <li>
@@ -246,10 +302,24 @@
             </a>
           </li>
           <li>
+            <a class="topic-card" href="/guide/chat/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg></span>
+              <span class="topic-card-title">チャット</span>
+              <span class="topic-card-text">店舗とのメッセージ・画像のやり取り、既読、送信の取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/notifications/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg></span>
+              <span class="topic-card-title">通知・お知らせ</span>
+              <span class="topic-card-text">ベル、お知らせ、Push 通知、通知設定</span>
+            </a>
+          </li>
+          <li>
             <a class="topic-card" href="/guide/account/">
               <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg></span>
               <span class="topic-card-title">マイページ</span>
-              <span class="topic-card-text">アカウント情報、パスワードの変更、ログアウト</span>
+              <span class="topic-card-text">アカウント情報、通知設定、パスワードの変更、ログアウト</span>
             </a>
           </li>
           <li>

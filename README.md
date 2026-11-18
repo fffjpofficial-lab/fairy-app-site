@@ -37,20 +37,33 @@
 JavaScript が無いときはこの表示のまま読めます。`site.js` は `release.js` を両方向に当てはめる（URL があればリンク、`null` なら「準備中」に戻す）ので、
 `release.js` を変えたら `index.html` の同じ箇所も同じ状態に直してください。
 
-## 操作ガイド（`/guide/`、2026-10-29 作成・2026-10-30 公開）
+## 操作ガイド（`/guide/`、2026-10-29 作成・2026-10-30 公開、2026-11-19 Build 3 版に改訂）
 
-- 対象: 出演者アプリ 1.0（Build 1）。このビルドで表示されないチャット・通知・お知らせ・イベント・通知設定は載せていない
-- ページ: `guide/index.html`（トップ）と `guide/<login|home|rooms|calendar|performance|makeup|account|faq>/index.html`。
-  ヘッダー・フッター・ページの最後の目次は9ページで同じ形。どれかを変えたら全ページを同じに直す
+- 対象: 出演者アプリ 1.0.0（Build 3、ソース `b2380b8`）。チャット・ベル・お知らせ・Push 通知・通知設定は、本番で使える前提で載せている
+  （2026-11-19 の方針）。イベントはアプリに表示されないので載せていない
+- ページ: `guide/index.html`（トップ）と `guide/<login|home|rooms|calendar|performance|makeup|chat|notifications|account|faq>/index.html`。
+  ヘッダー・フッターは全ページで同じ形。ページの最後の目次・前後のページ・ガイドのトップの目次は、11ページの一覧から作り直す
+  （作り直しの道具はこのリポジトリに置いていない。ページを足したら全ページの目次と前後のリンクを同じに直す）
 - 見た目: `assets/css/site.css` の部品（`steps`・`notice`・`card`・`feature-icon` 等）をそのまま使い、
   ガイドだけの部品は `assets/css/guide.css`（ガイドのページだけが読む。トップの見た目は変わらない）
-- 画像: `assets/img/guide/s-*.jpg`（34枚、すべて 600×1304）。出演者アプリの画面を、架空のデータだけを表示するプレビューで
-  iOS Simulator（iPhone 18 Pro、時刻 9:41）に表示して撮影し、幅 600px に縮小したもの。表示名「サンプル」・店舗「デモ店舗」・
+- 画像: `assets/img/guide/s-*.jpg`（48枚、すべて 600×1304）。出演者アプリの画面を、架空のデータだけを表示するプレビューで
+  iOS Simulator に表示して撮影し、幅 600px に縮小したもの（Build 1 の画面は iPhone 18 Pro、Build 3 で撮り直した16枚は iPhone 17・iOS 27.0。
+  どちらも時刻 9:41）。Build 3 の撮影は FMS の `4c9b552`（`b2380b8` との差はプレビューだけ）のプレビューの撮影モード
+  （`--dart-define=FAIRY_PREVIEW_STORE_SCREENSHOT=true` と v1.1 の5機能の定義、FMS の `docs/release/app-store-screenshots/README.md`）。表示名「サンプル」・店舗「デモ店舗」・
   ログインID `12345678`・サイト名「サイトA〜E」は架空の値。画面の文字・ボタン・配置は加工していない
   - 差し替えるときは同じ名前・同じ大きさで置き換える（ピンクの枠の位置は画像に対する % で HTML に書いてあるため、画面の構成が
     変わったら枠の位置も直す）
   - 実在の人・店舗の情報、審査用のアカウント、設定コード・再設定コード・パスワード、DEBUG の帯、プレビューだけの文言が写った画像は
     使わない。画像生成で画面を作らない。管理者向けの画面は載せない（初回設定・パスワードの再設定の Web ページも、画像なしで手順を文章で書く）
+  - 2026-11-19 に足した8枚（s-chat-image-preview・s-chat-image-sent・s-chat-received・s-chat-viewer・s-chat-expired・s-ann-detail・
+    s-notif-settings・s-cal-makeup）は、FMS のプレビューに足したガイド用の撮影モード（`lib/src/preview/preview_guide_screenshot.dart`、
+    `--dart-define=FAIRY_PREVIEW_GUIDE_SCREENSHOT=true` と `FAIRY_PREVIEW_GUIDE_IMAGE_BASE=http://127.0.0.1:<port>/`）で撮った。チャット・お知らせの
+    画像は、Mac の中のサーバーが出す架空の絵（案内図・持ち物・休業のお知らせ・模様）。通知設定の「端末の通知: オン」は、何も登録・送信しない
+    プレビュー用の Push の代わり。s-cal-makeup はプレビューの中で補填日を登録した後のカレンダー
+  - 撮れず、文章だけで説明している画面: 端末の通知の許可の確認（OS の画面）と Push 通知の表示。プレビューは Firebase を使わず、
+    シミュレーターでは通知の許可を外から与えられないため、本物の OS の画面を出せない。合成画像は作らない
+- トップの「アプリでできること」の画像（`assets/img/screen-0[1-6]-*.jpg`、640×1391）は、App Store の v1.1 のスクリーンショット（FMS の
+  `docs/release/app-store-screenshots/iphone-6.3/`）を幅 640px に縮小したもの
 - 操作の手順と画像: `<ol class="steps shot-steps">` の各 `<li class="has-shot">` が本文と画像（`figure.step-shot`）を並べる。
   単独の画像は `figure.screen-shot`（`guide-split` の中、スマートフォンでは本文の下）、並べるときは `.screen-row`
 - ピンクの枠: `<span class="mark" style="left:…%;top:…%;width:…%;height:…%">`（画像に重ねる HTML。画像そのものは加工しない）。
@@ -59,6 +72,7 @@ JavaScript が無いときはこの表示のまま読めます。`site.js` は `
   （閉じるボタン・背景のクリック・Esc で閉じる）。JavaScript が無くても画像はそのまま見える
 - 「よくある質問」は `/guide/faq/`（`<details>`、`#q-…` のリンクでその質問が開く）。トップの `pages.faq` が指す `faq/` とは別
 - `release.js` の `pages.guide` は `true`（2026-10-30。トップのヘッダーのメニューとサポートの欄に「操作ガイド」が出る）。
+  `index.html` も同じ状態（ガイドへのリンクは表示、`faq`・`updates` は `hidden`）で書いてあり、`site.js` は `pages` を両方向に当てはめる。
   `pages.faq` は `false` のまま（ガイドのよくある質問は `/guide/faq/` にあり、トップの `faq/` のページは無い）
 
 ## 将来のページ（よくある質問・更新情報）

@@ -98,6 +98,7 @@
           <li><div class="step-text"><strong><span class="ui">ログインID</span> に、半角数字8桁を入力します。</strong><span>数字のキーボードが開きます。</span></div></li>
           <li><div class="step-text"><strong><span class="ui">パスワード</span> に、設定したパスワードを入力します。</strong><span>右端の目のアイコンで、入力した文字を表示・非表示にできます。</span></div></li>
           <li><div class="step-text"><strong><span class="ui">ログイン</span> を押します。</strong><span>「確認しています…」「読み込み中…」の後、ホーム画面が開きます。</span></div></li>
+          <li><div class="step-text"><strong>通知の許可をまだ選んでいないときは、ログインの後に端末から通知の許可を求められます。</strong><span>許可すると、ルーム・補填・お知らせ・チャットを Push 通知でお知らせします。許可しなくてもアプリは使えます（<a href="/guide/notifications/#push">Push 通知</a>）。</span></div></li>
         </ol>
           </div>
 <figure class="screen-shot"><button class="zoom" type="button" aria-label="画像を拡大: ログイン画面: ログインID、パスワード、ログインのボタン"><span class="shot-frame"><img src="/assets/img/guide/s-login.jpg" alt="ログイン画面: ログインID、パスワード、ログインのボタン" width="600" height="1304" loading="lazy"><span class="mark" style="left:5%;top:37.1%;width:90%;height:6.4%" aria-hidden="true"><span class="mark-label">2</span></span><span class="mark" style="left:5%;top:47.7%;width:90%;height:6.4%" aria-hidden="true"><span class="mark-label">3</span></span><span class="mark" style="left:5%;top:58.2%;width:90%;height:5.7%" aria-hidden="true"><span class="mark-label">4</span></span></span></button><figcaption>ログイン画面</figcaption></figure>
@@ -154,6 +155,7 @@
           <li>一度ログインすると、ログアウトするまで、次からはログインID とパスワードを入力せずに使えます。</li>
           <li>ログインの状態はその端末の中にだけ保存されます。機種を変えたときや、アプリを入れ直したときは、もう一度ログインしてください。</li>
           <li>ほかの人の端末でログインしないでください。使い終わったら <a href="/guide/account/#logout">ログアウト</a> できます。</li>
+          <li>ログアウトすると、その端末には Push 通知が届かなくなります。</li>
         </ul>
         <div class="notice notice-blue">
           <p class="notice-title">パスワードは本人だけが入力してください</p>
@@ -169,6 +171,7 @@
           <li><a href="/guide/faq/#q-first-time">初めてで、パスワードがありません</a></li>
           <li><a href="/guide/faq/#q-forgot">パスワードを忘れました</a></li>
           <li><a href="/guide/faq/#q-denied">「このアカウントでは出演者アプリを利用できません」と表示される</a></li>
+          <li><a href="/guide/faq/#q-notif-permission-later">通知の許可を後から変えたい</a></li>
         </ul>
         <nav class="guide-pager" aria-label="前後のページ">
           <a class="prev" href="/guide/"><small>‹ 前のページ</small><span>操作ガイド トップ</span></a>
@@ -187,7 +190,7 @@
             <a class="topic-card" href="/guide/home/">
               <span class="feature-icon tone-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 8h-3v9h-5v-6h-2v6H6v-9H3z"/></svg></span>
               <span class="topic-card-title">ホーム画面</span>
-              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room の見方</span>
+              <span class="topic-card-text">今月のポイント、目標、今日・次回の出勤と Room、ベル</span>
             </a>
           </li>
           <li>
@@ -219,10 +222,24 @@
             </a>
           </li>
           <li>
+            <a class="topic-card" href="/guide/chat/">
+              <span class="feature-icon tone-lavender" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm3 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/></svg></span>
+              <span class="topic-card-title">チャット</span>
+              <span class="topic-card-text">店舗とのメッセージ・画像のやり取り、既読、送信の取り消し</span>
+            </a>
+          </li>
+          <li>
+            <a class="topic-card" href="/guide/notifications/">
+              <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 22a2.5 2.5 0 0 0 2.45-2h-4.9A2.5 2.5 0 0 0 12 22zm7-6V11a7 7 0 0 0-5.5-6.84V3.5a1.5 1.5 0 0 0-3 0v.66A7 7 0 0 0 5 11v5l-2 2v1h18v-1z"/></svg></span>
+              <span class="topic-card-title">通知・お知らせ</span>
+              <span class="topic-card-text">ベル、お知らせ、Push 通知、通知設定</span>
+            </a>
+          </li>
+          <li>
             <a class="topic-card" href="/guide/account/">
               <span class="feature-icon tone-pink" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg></span>
               <span class="topic-card-title">マイページ</span>
-              <span class="topic-card-text">アカウント情報、パスワードの変更、ログアウト</span>
+              <span class="topic-card-text">アカウント情報、通知設定、パスワードの変更、ログアウト</span>
             </a>
           </li>
           <li>

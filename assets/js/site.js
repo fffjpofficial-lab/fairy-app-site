@@ -81,11 +81,11 @@
     });
   });
 
-  // Future pages appear in the navigation only when they exist.
+  // A page's links show only while release.js says the page exists. index.html is
+  // written in that state (guide shown, faq / updates hidden), so it reads the
+  // same without JavaScript; this applies release.js both ways.
   Object.keys(pages).forEach(function (key) {
-    if (pages[key] === true) {
-      each('[data-page="' + key + '"]', function (el) { el.hidden = false; });
-    }
+    each('[data-page="' + key + '"]', function (el) { el.hidden = pages[key] !== true; });
   });
 
   // Copy buttons for the SHA-256 values.
