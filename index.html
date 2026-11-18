@@ -45,13 +45,13 @@
           <h1 id="hero-title"><span class="logo-text">Fairy</span><span class="hero-sub">出演者アプリ</span></h1>
           <p class="lead">出勤予定の登録、ルーム予約、今月のポイントの確認を、スマートフォンひとつで。Fairy で活動する出演者のための公式アプリです。</p>
           <div class="store-buttons">
-            <a class="btn btn-ios is-pending" href="#ios" data-download="ios" data-pending-target="#ios">
+            <a class="btn btn-ios" href="https://apps.apple.com/jp/app/fairy-performer/id6826759700" rel="noopener" data-download="ios" data-pending-target="#ios">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.2 1.1-.04 1.52-.71 2.85-.71s1.7.71 2.87.69c1.19-.02 1.94-1.08 2.66-2.14.84-1.23 1.19-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.13c.6-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.7-.93 2.7.98.08 1.98-.5 2.59-1.24z"/></svg>
-              <span class="btn-text"><small>iPhone 版</small><span data-label>準備中</span></span>
+              <span class="btn-text"><small>iPhone 版</small><span data-label>App Store で入手</span></span>
             </a>
-            <a class="btn btn-android is-pending" href="#android" data-download="android" data-pending-target="#android">
+            <a class="btn btn-android" href="https://pub-53153ea32fca4383811f43275f914355.r2.dev/fairy-performer-android-1.0.0-3-prod.apk" rel="noopener" data-download="android" data-pending-target="#android">
               <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.3 11.3 0 0 0 12 8.1c-1.78 0-3.46.4-4.92 1.04L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.4 10.4 0 0 0 1 18h22a10.4 10.4 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
-              <span class="btn-text"><small>Android 版</small><span data-label>準備中</span></span>
+              <span class="btn-text"><small>Android 版</small><span data-label>ダウンロード</span></span>
             </a>
           </div>
           <p class="hero-note">アプリの利用には、所属店舗が発行するアカウントが必要です。</p>
@@ -113,13 +113,17 @@
             <div><dt>入手先</dt><dd>App Store</dd></div>
             <div><dt>対応</dt><dd>iOS <span data-ios="minIOS">15.0</span> 以上の iPhone</dd></div>
           </dl>
-          <div class="notice notice-blue" data-state="ios-pending">
+          <div class="notice notice-blue" data-state="ios-pending" hidden>
             <p class="notice-title">準備中</p>
             <p>App Store で公開され次第、ここにリンクを掲載します。</p>
           </div>
-          <p data-state="ios-ready" hidden>App Store から入手してください。アップデートも App Store から自動で届きます。</p>
-          <a class="btn btn-ios btn-block is-pending" href="#ios" data-download="ios" data-pending-target="#ios">
-            <span class="btn-text"><span data-label>準備中</span></span>
+          <p data-state="ios-ready">下のボタンから App Store のページを開き、「入手」をタップしてください。アップデートも App Store から配信されます。</p>
+          <div class="notice notice-blue" data-state="ios-ready">
+            <p class="notice-title">App Store で検索しても表示されません</p>
+            <p>このアプリは、リンクを知っている方だけが入手できる形で App Store に公開しています。アプリ名で検索しても見つからないため、このページのボタンから App Store を開いてください。</p>
+          </div>
+          <a class="btn btn-ios btn-block" href="https://apps.apple.com/jp/app/fairy-performer/id6826759700" rel="noopener" data-download="ios" data-pending-target="#ios">
+            <span class="btn-text"><span data-label>App Store で入手</span></span>
           </a>
         </div>
       </div>
@@ -133,26 +137,26 @@
 
         <div class="card release-card">
           <dl class="release-facts">
-            <div><dt>バージョン</dt><dd><span data-android="versionName">1.0.0</span></dd></div>
+            <div><dt>バージョン</dt><dd><span data-android="versionName">1.0.0</span>（<span data-android="versionCode">3</span>）</dd></div>
             <div><dt>対応</dt><dd>Android <span data-android="minAndroid">7.0</span> 以上</dd></div>
-            <div><dt>ファイル</dt><dd><span data-android="fileName">fairy-performer-android-1.0.0-1-prod.apk</span>（<span data-android="fileSize">約 56 MB</span>）</dd></div>
+            <div><dt>ファイル</dt><dd><span data-android="fileName">fairy-performer-android-1.0.0-3-prod.apk</span>（<span data-android="fileSize">約 62 MB</span>）</dd></div>
           </dl>
 
-          <div class="notice notice-info" data-state="android-pending">
-            <p class="notice-title">配布方法を準備しています</p>
-            <p>Android 版は Google Play ではなく、所属店舗から APK ファイルでお渡しします。入手の方法は店舗からご案内しますので、それまでお待ちください。</p>
+          <div class="notice notice-info" data-state="android-pending" hidden>
+            <p class="notice-title">準備中</p>
+            <p>Android 版のダウンロードは準備中です。公開され次第、このページでお知らせします。</p>
           </div>
-          <p data-state="android-ready" hidden>下のボタンから APK をダウンロードし、「インストールの手順」に沿って入れてください。</p>
+          <p data-state="android-ready">Android 版は Google Play ではなく、このページから APK ファイルを直接ダウンロードして入れます。下のボタンから APK をダウンロードし、「インストールの手順」に沿って入れてください。</p>
 
-          <a class="btn btn-android btn-block is-pending" href="#android-install" data-download="android" data-pending-target="#android-install">
-            <span class="btn-text"><span data-label>準備中</span></span>
+          <a class="btn btn-android btn-block" href="https://pub-53153ea32fca4383811f43275f914355.r2.dev/fairy-performer-android-1.0.0-3-prod.apk" rel="noopener" data-download="android" data-pending-target="#android-install">
+            <span class="btn-text"><span data-label>ダウンロード</span></span>
           </a>
         </div>
 
         <h3 class="sub-title" id="android-install">インストールの手順</h3>
         <ol class="steps">
           <li><strong>このページの「ダウンロード」をタップします。</strong>Android スマートフォンの Chrome などのブラウザで、このページを開いて操作します。</li>
-          <li><strong>ダウンロードの確認が表示されたら、内容を確かめて保存します。</strong>ファイル名が <span data-android="fileName">fairy-performer-android-1.0.0-1-prod.apk</span> であることを確かめてから保存します。ファイル名が違うときは保存しないでください。</li>
+          <li><strong>ダウンロードの確認が表示されたら、内容を確かめて保存します。</strong>ファイル名が <span data-android="fileName">fairy-performer-android-1.0.0-3-prod.apk</span> であることを確かめてから保存します。ファイル名が違うときは保存しないでください。</li>
           <li><strong>ダウンロードした APK ファイルを開きます。</strong>ダウンロード完了の通知、または Chrome の「ダウンロード」や「ファイル」アプリから開きます。</li>
           <li><strong>インストールの許可を求められたら、今回使ったブラウザに許可します。</strong>「不明なアプリ」などの表示が出たら「設定」を開き、ダウンロードに使ったブラウザ（Chrome など）だけ「この提供元のアプリを許可」をオンにして戻り、「インストール」を押します。Play プロテクトの表示が出た場合は、下の「Play プロテクトの表示が出たとき」をご確認ください。</li>
           <li><strong>インストールが完了したら、Fairy アプリを開きます。</strong>「開く」を押すか、ホーム画面やアプリの一覧の「Fairy」から開きます。</li>
@@ -188,7 +192,7 @@
           <dl class="hash-list">
             <div>
               <dt>APK の SHA-256</dt>
-              <dd><code id="apk-sha" data-android="apkSha256">295cd1115b033e2d840cb688d4db354c96c5350be0c5a7acd4d4472c622e14eb</code>
+              <dd><code id="apk-sha" data-android="apkSha256">14cfa0a0386cef1e3eeb06268c288d81b0b366a498d26bccb931bcae6006b38d</code>
                 <button class="copy-btn" type="button" data-copy="#apk-sha">コピー</button></dd>
             </div>
             <div>
@@ -197,8 +201,12 @@
                 <button class="copy-btn" type="button" data-copy="#cert-sha">コピー</button></dd>
             </div>
             <div>
+              <dt>ファイルサイズ</dt>
+              <dd><span data-android="fileBytes">62,438,292 bytes</span></dd>
+            </div>
+            <div>
               <dt>バージョン</dt>
-              <dd><span><span data-android="versionName">1.0.0</span>（<span data-android="versionCode">1</span>）・パッケージ名 com.fffinc.fairy</span></dd>
+              <dd><span><span data-android="versionName">1.0.0</span>（<span data-android="versionCode">3</span>）・パッケージ名 com.fffinc.fairy</span></dd>
             </div>
           </dl>
         </details>

@@ -29,16 +29,28 @@
     each(selector, function (el) { el.textContent = String(text); });
   }
 
-  // A download control becomes a real link only when a URL is configured.
-  function enable(selector, href, label) {
-    each(selector, function (el) {
-      el.setAttribute('href', href);
-      el.removeAttribute('aria-disabled');
-      el.classList.remove('is-pending');
-      el.setAttribute('rel', 'noopener');
+  // A download control is a real link when its URL is configured, and a
+  // 準備中 link to its own section when not. index.html is written in the
+  // state release.js gives (so it reads the same without JavaScript); this
+  // applies release.js in both directions, so release.js stays the one place
+  // that decides.
+  function apply(kind, href, readyLabel) {
+    each('[data-download="' + kind + '"]', function (el) {
       var text = el.querySelector('[data-label]');
-      if (text && label) text.textContent = label;
+      if (href) {
+        el.setAttribute('href', href);
+        el.classList.remove('is-pending');
+        el.setAttribute('rel', 'noopener');
+        if (text) text.textContent = readyLabel;
+      } else {
+        el.setAttribute('href', el.getAttribute('data-pending-target') || '#');
+        el.classList.add('is-pending');
+        el.removeAttribute('rel');
+        if (text) text.textContent = '準備中';
+      }
     });
+    each('[data-state="' + kind + '-pending"]', function (el) { el.hidden = !!href; });
+    each('[data-state="' + kind + '-ready"]', function (el) { el.hidden = !href; });
   }
 
   // Release facts.
@@ -47,25 +59,16 @@
   setText('[data-android="minAndroid"]', android.minAndroid);
   setText('[data-android="fileName"]', android.fileName);
   setText('[data-android="fileSize"]', android.fileSize);
+  setText('[data-android="fileBytes"]', android.fileBytes);
   setText('[data-android="apkSha256"]', android.apkSha256);
   setText('[data-android="certSha256"]', android.certSha256);
   setText('[data-ios="minIOS"]', ios.minIOS);
 
   // Android: the APK lives outside this site (its distribution is decided separately).
-  var apk = httpsUrl(android.downloadUrl);
-  if (apk) {
-    enable('[data-download="android"]', apk, 'ダウンロード');
-    each('[data-state="android-pending"]', function (el) { el.hidden = true; });
-    each('[data-state="android-ready"]', function (el) { el.hidden = false; });
-  }
+  apply('android', httpsUrl(android.downloadUrl), 'ダウンロード');
 
   // iOS: only a real apps.apple.com link is accepted.
-  var store = httpsUrl(ios.appStoreUrl, /^apps\.apple\.com$/);
-  if (store) {
-    enable('[data-download="ios"]', store, 'App Store で入手');
-    each('[data-state="ios-pending"]', function (el) { el.hidden = true; });
-    each('[data-state="ios-ready"]', function (el) { el.hidden = false; });
-  }
+  apply('ios', httpsUrl(ios.appStoreUrl, /^apps\.apple\.com$/), 'App Store で入手');
 
   // Pending controls do nothing when pressed (they are links to their section).
   each('[data-download].is-pending', function (el) {

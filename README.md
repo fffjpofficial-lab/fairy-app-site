@@ -30,9 +30,12 @@
 - Android の新しい版: `versionName`・`versionCode`・`fileName`・`fileSize`・`apkSha256`・`certSha256`（鍵は変えないので通常は同じ値）
 - Android の配布の URL が決まったら `downloadUrl` に `https://…` を入れる。入れるまで、ボタンは「準備中」
 - iPhone: App Store で公開された後に、App Store Connect の実際の URL（`https://apps.apple.com/…`）を `appStoreUrl` に入れる。
-  推測で入れない。`apps.apple.com` 以外の URL は `site.js` が受け付けない
+  推測で入れない。`apps.apple.com` 以外の URL は `site.js` が受け付けない。
+  2026-11-18 に `https://apps.apple.com/jp/app/fairy-performer/id6826759700` を設定した（Unlisted で配布。App Store の検索には出ない）
 
-`index.html` に書いてある値（版・SHA-256）は JavaScript が無いときの表示です。版を変えたら同じ値に直してください。
+`index.html` は `release.js` の値どおりの状態で書いてあります（版・SHA-256・ボタンのリンク先と文言・「準備中」の案内の表示/非表示）。
+JavaScript が無いときはこの表示のまま読めます。`site.js` は `release.js` を両方向に当てはめる（URL があればリンク、`null` なら「準備中」に戻す）ので、
+`release.js` を変えたら `index.html` の同じ箇所も同じ状態に直してください。
 
 ## 操作ガイド（`/guide/`、2026-10-29 作成・2026-10-30 公開）
 
